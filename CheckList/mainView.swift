@@ -10,9 +10,9 @@ import SwiftUI
 struct BottomTab: View {
     var body: some View {
         TabView {
-            Text("Tasks")
+            Tasks()
                 .tabItem {
-                    Image(systemName: "heart.fill")
+                    Image(systemName: "pencil")
                     Text("To Do's")
                 }
             addTask()
