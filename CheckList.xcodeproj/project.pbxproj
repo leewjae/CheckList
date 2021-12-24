@@ -14,7 +14,11 @@
 		89021D3827743C3A00234849 /* CheckListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D3727743C3A00234849 /* CheckListTests.swift */; };
 		89021D4227743C3A00234849 /* CheckListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D4127743C3A00234849 /* CheckListUITests.swift */; };
 		89021D4427743C3A00234849 /* CheckListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D4327743C3A00234849 /* CheckListUITestsLaunchTests.swift */; };
-		89021D5127743CAD00234849 /* BottomTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D5027743CAD00234849 /* BottomTab.swift */; };
+		89021D5127743CAD00234849 /* mainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D5027743CAD00234849 /* mainView.swift */; };
+		89021D532774409600234849 /* addTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D522774409600234849 /* addTask.swift */; };
+		89021D55277440A600234849 /* calendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D54277440A600234849 /* calendar.swift */; };
+		89021D57277440B200234849 /* doneTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D56277440B200234849 /* doneTask.swift */; };
+		89021D592775B36100234849 /* tasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89021D582775B36100234849 /* tasks.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,7 +49,11 @@
 		89021D3D27743C3A00234849 /* CheckListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CheckListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89021D4127743C3A00234849 /* CheckListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListUITests.swift; sourceTree = "<group>"; };
 		89021D4327743C3A00234849 /* CheckListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		89021D5027743CAD00234849 /* BottomTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomTab.swift; sourceTree = "<group>"; };
+		89021D5027743CAD00234849 /* mainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainView.swift; sourceTree = "<group>"; };
+		89021D522774409600234849 /* addTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addTask.swift; sourceTree = "<group>"; };
+		89021D54277440A600234849 /* calendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendar.swift; sourceTree = "<group>"; };
+		89021D56277440B200234849 /* doneTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doneTask.swift; sourceTree = "<group>"; };
+		89021D582775B36100234849 /* tasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tasks.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +106,11 @@
 			children = (
 				89021D2627743C3800234849 /* CheckListApp.swift */,
 				89021D2827743C3800234849 /* ContentView.swift */,
-				89021D5027743CAD00234849 /* BottomTab.swift */,
+				89021D5027743CAD00234849 /* mainView.swift */,
+				89021D582775B36100234849 /* tasks.swift */,
+				89021D522774409600234849 /* addTask.swift */,
+				89021D54277440A600234849 /* calendar.swift */,
+				89021D56277440B200234849 /* doneTask.swift */,
 				89021D2A27743C3A00234849 /* Assets.xcassets */,
 				89021D2C27743C3A00234849 /* Preview Content */,
 			);
@@ -260,9 +272,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89021D57277440B200234849 /* doneTask.swift in Sources */,
+				89021D532774409600234849 /* addTask.swift in Sources */,
 				89021D2927743C3800234849 /* ContentView.swift in Sources */,
 				89021D2727743C3800234849 /* CheckListApp.swift in Sources */,
-				89021D5127743CAD00234849 /* BottomTab.swift in Sources */,
+				89021D5127743CAD00234849 /* mainView.swift in Sources */,
+				89021D592775B36100234849 /* tasks.swift in Sources */,
+				89021D55277440A600234849 /* calendar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +447,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -460,6 +477,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
